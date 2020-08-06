@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains ucsc_profiles.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ucsc_profiles_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ucsc_profiles module.
+    case 'help.page.ucsc_profiles':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Displays profiles for UCSC affiliates from the Campus Directory') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ucsc_profiles_theme() {
+  return [
+    'ucsc_profiles' => [
+      'render element' => 'children',
+    ],
+  ];
+}

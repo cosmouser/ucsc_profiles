@@ -1,0 +1,7 @@
+name: 'UCSC Profiles'
+type: module
+description: 'Displays profiles for UCSC affiliates from the Campus Directory'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - shortcode:shortcode

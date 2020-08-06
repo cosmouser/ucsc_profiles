@@ -1,0 +1,7 @@
+ucsc_profiles.config:
+  path: '/admin/ucsc_profiles'
+  defaults:
+    _form: '\Drupal\ucsc_profiles\Form\ProfilesConfigForm'
+    _title: 'UCSC Profiles Configuration'
+  requirements:
+    _permission: 'administer site configuration'

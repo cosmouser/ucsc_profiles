@@ -1,0 +1,3 @@
+services:
+  ucsc_profiles:
+    class: Drupal\ucsc_profiles\ProfilesService

@@ -1,0 +1,6 @@
+profiles-style:
+  version: 1.x
+  header: true
+  css:
+    theme:
+      css/profiles.css: {}
